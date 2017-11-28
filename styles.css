@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Barlow|PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Barlow|PT+Sans|Poppins');
+/* Start http://www.cursors-4u.com */ body, a:hover
+{cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat942.ani),
+  url(http://cur.cursors-4u.net/nature/nat-10/nat942.png),
+  progress !important;} /* End http://www.cursors-4u.com */
+body {
+  color: #555;
+  margin: 0;
+  background: url("landes.png");
+  background-size: contain;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+}
+#header {
+  background-image: linear-gradient(blue, pink, transparent);
+  height: 150px;
+  line-height: 150px;
+}
+#header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+#header a:hover {
+  color: #222;
+}
+#header-title {
+  display: block;
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 1%;
+}
+#header-nav {
+  display: block;
+  float: right;
+  margin-top: 72px;
+}
+#header-nav li {
+  display: inline;
+  padding-left: 20px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#footer {
+  background-image: linear-gradient(transparent, pink, blue);
+  padding: 50px 0;
+}
+.column {
+  min-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+#footer h4, h3, h2, h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+#footer p {
+  color: white;
+}
+a {
+  color: #FF5A1C;
+  text-decoration: none;
+}
+a:hover {
+  color: #000FFF;
+}
+.post, .about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.about img {
+  border-radius: 0;
+  border-style: inset;
+  border-color: pink;
+  border-width: thick;
+  width: 60%;
+  margin-left: 17.5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  align: center
+}
+.post-author img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+.post-author span {
+  margin-left: 16px;
+}
+.post-date {
+  color: #D2D2D2;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+h1, h2, h3, h4 {
+  color: pink;
+}
+p, ul, dl {
+  line-height: 1.5;
+}
+.about {
+  text-align: left;
+}
+.text-box, .post-content p {
+  border-style: inset;
+  border-color: pink;
+  border-width: thick;
+  background-color: white;
+  color: blue;
+  padding: 10px;
+  width: 90%;
+  opacity: 0.8;
+}
+.signoff {
+  text-align: center;
+}
+#embed {
+  text-align: center;
+}
+#embed iframe{
+  border-style: inset;
+  border-color: pink;
+  border-width: thick;
+}
+#footer li {
+  display: inline;
+  float: center;
+  color: orange;
+  list-style-type: none;
+  padding: 10px;
+}
