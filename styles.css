@@ -7,11 +7,6 @@
   url(http://cur.cursors-4u.net/nature/nat-10/nat942.png),
   progress !important;} /* End http://www.cursors-4u.com */
 
-@media only screen and (max-width: 500px) {
-    body {
-        background-color: lightblue;
-    }
-}
 body {
   color: #555;
   margin: 0;
@@ -19,6 +14,13 @@ body {
   background-size: contain;
   background-attachment: fixed;
   font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-color: lightblue;
+        background-image: none;
+    }
 }
 #header {
   background-image: linear-gradient(blue, pink, transparent);
