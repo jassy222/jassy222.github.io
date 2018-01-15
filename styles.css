@@ -18,14 +18,18 @@ body {
 
 @media only screen and (max-width: 700px) {
     body {
-        background-color: lightblue;
-        background-image: none;
+          background-image: linear-gradient(blue, pink, transparent)
     }
 }
 #header {
   background-image: linear-gradient(blue, pink, transparent);
   height: 150px;
   line-height: 150px;
+}
+@media only screen and (max-width: 700px) {
+    #header {
+              background-image: none;
+    }
 }
 #header a {
   color: white;
