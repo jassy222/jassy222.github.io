@@ -18,7 +18,7 @@ body {
 
 @media only screen and (max-width: 700px) {
     body {
-          background-image: linear-gradient(blue, pink, transparent)
+          background-image: linear-gradient(blue, pink)
     }
 }
 #header {
@@ -29,6 +29,8 @@ body {
 @media only screen and (max-width: 700px) {
     #header {
               background-image: none;
+              height: 10%;
+              line-height: 10%;
     }
 }
 #header a {
@@ -63,6 +65,11 @@ body {
 #footer {
   background-image: linear-gradient(transparent, pink, blue);
   padding: 50px 0;
+}
+@media only screen and (max-width: 700px) {
+    #footer {
+              background-image: none;
+    }
 }
 .column {
   min-width: 300px;
