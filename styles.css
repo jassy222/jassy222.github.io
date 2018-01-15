@@ -38,6 +38,9 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  @keyframes mymove {
+    50% {text-shadow: 10px 20px 30px blue;}
+}
 }
 #header a:hover {
   color: #222;
