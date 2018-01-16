@@ -38,12 +38,11 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  @keyframes mymove {
-    50% {text-shadow: 10px 20px 30px blue;}
-}
+  -webkit-transition: color 2s;
+  transition: color 2s;
 }
 #header a:hover {
-  color: #222;
+  color: blue;
 }
 #header-title {
   display: block;
@@ -90,6 +89,8 @@ body {
 a {
   color: #FF5A1C;
   text-decoration: none;
+  -webkit-transition: color 2s;
+  transition: color 2s;
 }
 a:hover {
   color: #000FFF;
@@ -131,8 +132,14 @@ h1, h2, h3, h4 {
 p, ul, dl {
   line-height: 1.5;
 }
-.about {
+.about-content {
   text-align: left;
+  opacity: 0.8;
+  -webkit-transition: opacity 3s;
+  transition: opacity: 3s;
+}
+.about-content:hover {
+  opacity: 1
 }
 .text-box, .post-content p {
   border-style: inset;
@@ -143,6 +150,11 @@ p, ul, dl {
   padding: 10px;
   width: 90%;
   opacity: 0.8;
+  -webkit-transition: opacity 3s;
+  transition: opacity: 3s;
+}
+.text-box, .post-content p:hover {
+  opacity: 1;
 }
 .signoff {
   text-align: center;
