@@ -54,6 +54,7 @@ height: 100%;
     }
     #header-title {
       text-align: center;
+      max-width: 90%;
     }
     #header-nav {
       text-align: center;
