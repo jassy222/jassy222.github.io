@@ -56,6 +56,11 @@ height: 100%;
       text-align: center;
       max-width: 90%;
     }
+    #header-title {
+    margin: 0;
+    line-height: 1.2em;
+    width: 70%;
+    }
     #header-nav {
       text-align: center;
     }
