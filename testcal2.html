@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="http://cur.cursors-4u.net/nature/nat-10/nat942.png">
+   <title>Jaslyn Robertson</title>
+   <link rel="stylesheet" type="text/css"
+   href="styles.css">
+
+   <style>
+    body{
+        margin:0;
+        padding:0;
+        text-align:center;
+    }
+    
+    /* Center all content */
+    .container,
+    .text-box,
+    .grid,
+    .card,
+    .event{
+        margin:auto;
+        text-align:center;
+    }
+    
+    /* Featured event box */
+    .text-box{
+        max-width:900px;
+        padding:30px;
+    }
+    
+    /* Calendar section */
+    .grid{
+        width:100%;
+    }
+    
+    .card{
+        max-width:1100px;
+        margin:auto;
+        padding:20px;
+    }
+    
+    /* Larger calendar */
+    iframe{
+        width:95%;
+        height:900px;
+        border:none;
+        margin:auto;
+        display:block;
+    }
+    
+    /* Event text */
+    .event{
+        font-size:20px;
+        line-height:1.7;
+    }
+    </style>
+    
+ </head>
+ <body>
+  <!-- Header title -->
+  <div id="header">
+    <div class="container">
+      <a id="header-title" href="http://jaslyn.biz">Jaslyn Robertson <span class="mobile-hide"> - </span> Composer</a>
+      <div class="header-nav">
+        <a href="about.html">About  </a>
+         <a href="recordings.html">Music  </a>
+        <a href="research.html">Research  </a>
+         <a href="links.html">Contact </a>
+         <a href="calendar.html">Events  </a></ul>
+      </div>
+      <span class="button" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+  </div>
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="about.html">About</a>
+    <a href="recordings.html">Music</a>
+    <a href="research.html">Research</a>
+    <a href="links.html">Links & Contact</a>
+    <a href="calendar.html">Events</a>
+  </div>
+</div>
+</div>
+</div>
+<!-- Use any element to open/show the overlay navigation menu -->
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+</script>
+<div class="text-box"><h2>Featured events</h2><div class="event"><h4>Research Seminar<br>Presentation of PhD research<br>Monash University - May 28</h4></div></section>
+<div class="grid">
+  <script>
+    const API_KEY='YOUR_API_KEY';
+    const CALENDAR_ID='eq2ju7i4jsg9kcboogtindud4o@group.calendar.google.com';
+    const url=`https://www.googleapis.com/calendar/v3/calendars/${eq2ju7i4jsg9kcboogtindud4o@group.calendar.google.com}/events?key=${API_KEY}&singleEvents=true&orderBy=startTime&timeMin=${new Date().toISOString()}`;
+    fetch(url)
+    .then(r=>r.json())
+    .then(data=>{
+     const wrap=document.getElementById('events');
+     wrap.innerHTML='';
+     if(!data.items || !data.items.length){wrap.innerHTML='<p>No upcoming events.</p>';return;}
+     data.items.forEach(ev=>{
+       const d=document.createElement('div');
+       d.className='event';
+       const when=ev.start.dateTime || ev.start.date;
+       const desc=ev.description || '';
+       const match=desc.match(/https?:\/\/\S+/);
+       const ticket=match ? match[0] : '';
+       d.innerHTML=`<h2>${ev.summary||'Untitled Event'}</h2><div class='date'>${new Date(when).toLocaleString()}</div><p>${desc.replace(/https?:\/\/\S+/,'')}</p>${ticket?`<a class='button' href='${ticket}' target='_blank'>Buy Tickets</a>`:''}`;
+       wrap.appendChild(d);
+     });
+    })
+    .catch(()=>document.getElementById('events').innerHTML='<p>Unable to load events.</p>');
+    </script>
+</section>
+</main>
+</body>
+</html>

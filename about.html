@@ -1,39 +1,72 @@
 <!DOCTYPE html>
 <html>
- <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  <head>
-    <link rel="icon" href="http://cur.cursors-4u.net/nature/nat-10/nat942.png">
-   <title>Jaslyn Robertson - About</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="http://cur.cursors-4u.net/nature/nat-10/nat942.png">
+   <title>Jaslyn Robertson</title>
    <link rel="stylesheet" type="text/css"
    href="styles.css">
  </head>
  <body>
-   <div id="header">
-     <div class="container">
-       <a id="header-title" href="http://jaslyn.biz">Jaslyn Robertson - Composer</a>
-       <ul id="header-nav">
-         <li><a href="about.html">About</a></li>
-         <li><a href="recordings.html">Recordings</a></li>
-          <li><a href="links.html">Links & Contact</a><li>
-          <li><a href="calendar.html">Concerts</a>
-       </ul>
-     </div>
+  <!-- Header title -->
+  <div id="header">
+    <div class="container">
+      <a id="header-title" href="http://jaslyn.biz">Jaslyn Robertson <span class="mobile-hide"> - </span> Composer</a>
+      <div class="header-nav">
+        <a href="about.html">About  </a>
+         <a href="recordings.html">Music  </a>
+        <a href="research.html">Research  </a>
+         <a href="links.html">Contact </a>
+         <a href="calendar.html">Events  </a></ul>
+      </div>
+      <span class="button" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </div>
+  </div>
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="about.html">About</a>
+    <a href="recordings.html">Music</a>
+    <a href="research.html">Research</a>
+    <a href="links.html">Links & Contact</a>
+    <a href="calendar.html">Events</a>
+  </div>
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
    <div id="content">
     <div class="container">
       <div class="about">
         <div class="about-author">
-          <img src="headshot.jpg">
+          <figure>
+          <img src="Jaslyn1.png">
+          </figure>
         <h2 class="about-title">Biography</h2>
         <div class="about-content">
           <div class="text-box">
-          <p><br>Jaslyn Robertson is a queer multidisciplinary composer and artistic researcher. Her work evolves out of ideas and research, collaboration and experimentation. For others, her work is both ‘theatrical and demanding’ (Limelight) and ‘evokes a kind of anxiety, a kind of otherness, and yet a joy in this as well, through her creative use of modular synthesis, unconventional tunings, and unusual sounds’ (The Sound Barrier). 
-<br><br>
-           Driven by the excitement of learning new artistic skills, Jaslyn works with video, technology, spatialised audio and experimental forms of notation to realise her creative concepts. Working closely with improvising performers, artists, writers and fashion designers helps her to expand her reach and perspective. The aim of her work is to form multisensory performances that raise questions and unfold into discussion on complex social issues. A current focus of her practice and artistic research, culminating in a PhD in Music at Monash University, is queering concepts of censorship. She is developing an opera that unveils creative possibilities in restricted social environments. Through her work, she seeks to contribute to a wider discussion about self-censorship within structures of power.
-<br><br>
-The highlights of her musical career include winning the Homophonic Composition Prize, having works performed at BIFEM, MONA FOMA and the Deutsche Oper Berlin for Klangwerstatt Festival, opening for Jon Rose at Rouse Hill Psychedelia, and performing electronics in Cat Hope’s Speechless. She is currently part of Speak Percussion’s Bespoke program and an alumni of the Darmstädter Ferienkurse, Montreal Contemporary Music Lab, Toronto Creative Music Lab and the Australian Art Orchestra’s Creative Music Intensive. A 2023 exchange to the Hochschule für Musik und Theatre Hamburg expanded her presence in Germany and her multimedia composition skills, taking classes with Alexander Schubert. Composing for renowned performers including Ossicle Duo, Argonaut String Quartet, Kyla Matsuura-Miller, Tristram Williams, and members of Decibel New Music Ensemble, her music has been performed in festivals around the world. 
-           <br><br>
-           Photo: Yunis Tmeizeh 2020
+          <p>
+            Jaslyn Robertson is a multidisciplinary composer, electronic musician and artistic researcher. Her work explores queerness, silence and alternate temporalities through expanded forms of music notation, immersive multimedia and spatial audio. Experimentation is at the core of her practice, and she often collaborates with improvising musicians, writers and fashion designers who share an inclination towards failure, humour and stretched boundaries. Jaslyn’s electronic music draws from the dirty, analogue friction of early synthesizer recordings. She performs noise-drone electronics solo as Drealm and in duos with Darlene Aaron (WE1 XAM) and Iran Sanadzadeh.
+            
+            <br><br>For others, her work is both ‘theatrical and demanding’ (Limelight) and ‘evokes a kind of anxiety, a kind of otherness, and yet a joy in this as well, through her creative use of modular synthesis, unconventional tunings, and unusual sounds’ (The Sound Barrier).
+            
+            <br><br>Major performances include the premiere of her experimental chamber opera ‘Knots that Bind’ and works performed at Klangwerkstatt Berlin, BIFEM and MONA FOMA, as well as performing electronics in Cat Hope’s opera ‘Speechless’ in Hamburg. Jaslyn has written for Decibel New Music Ensemble, Ossicle Duo, Argonaut string quartet, Kyla Matsuura-Miller and Tristram Williams. 
+            
+            <br><br>Jaslyn holds a PhD in Music Composition from Monash University.              
           </p>
         </div> <!-- text-box -->
           <br>
@@ -55,6 +88,8 @@ The highlights of her musical career include winning the Homophonic Composition 
         <h2 class="about-title">Selected list of works</h2>
         <div class="text-box">
           <dl>
+            <dt><em>Knots that Bind</em> an experimental chamber opera for improvisers, spatialised electronics and multimedia</dt>
+            <dd>Performed at <b>David Li Sound Gallery, MPAC</b> by Tina Stefanou, Darlene Aaron, Elizabeth Jigalin, Jane Aubourg, Niki Johnson and Iran Sanadzadeh with text by Eloise Grills and textiles by Alison Pyrke<dd><br>
             <dt><em>Rosenhöhe </em>for violin, trombone and electronics</dt>
             <dd>Performed at <b>Darmstädter Ferienkurse 2023 </b> by Myra Hinrichs and Vasily Ratmansky<dd><br>
             <dt><em>Blackout Diary </em>for electric guitar, projection and spatialised electronics 13.1</dt>
@@ -90,17 +125,7 @@ The highlights of her musical career include winning the Homophonic Composition 
             <dt><em>Aerobatics: 5 miniatures for string quartet</em><dt>
               <dd>First performed by the Argonaut String Quartet at the <strong>
                 Bendigo International Festival of Exploratory Music 2016</strong>
-              </dd><br>
-            <dt><em>but to desire is my pleasure,</em> for flute and guitar
-              <dd>Performed in Prato, Italy by Luciano Tristaino and Gisbert
-                Watty</dd><br>
-            <dt><em>Pressure</em> for double bass and electronics<dt>
-              <dd>Performed by Patrick Lyons at <strong>Tilde New Music Festival
-                2017</strong></dd><br>
-            <dt>Galaxies: <em>A Ship Full of Scientologists</em> and <em>Venus
-               Express</em></dt>
-               <dd>Performed at <strong>Tilde New Music Festival 2016</strong>
-               </dd><br>
+              </dd><br>          
             <dt><em>Wandering</em> for quartertone flugelhorn</dt>
               <dd>Performed by Tristram Williams</dd>
               <dd>Winner of the <strong>Monash University Composition Prize
@@ -110,5 +135,6 @@ The highlights of her musical career include winning the Homophonic Composition 
     </div> <!-- about -->
   </div> <!-- container -->
 </div> <!-- element -->
+<footer><br></footer>
 </body>
 </html>

@@ -1,107 +1,116 @@
-
 <!DOCTYPE html>
 <html>
- <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  <head>
-    <link rel="icon" href="http://cur.cursors-4u.net/nature/nat-10/nat942.png">
-   <title>Jaslyn Robertson - Recordings</title>
+  <meta charset="UTF-8">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="http://cur.cursors-4u.net/nature/nat-10/nat942.png">
+   <title>Jaslyn Robertson</title>
    <link rel="stylesheet" type="text/css"
    href="styles.css">
  </head>
  <body>
-</body>
-   <div id="header">
-     <div class="container">
-       <a id="header-title" href="http://jaslyn.biz">Jaslyn Robertson - Composer</a>
-       <ul id="header-nav">
-         <li><a href="about.html">About</a></li>
-         <li><a href="recordings.html">Recordings</a></li>
-          <li><a href="links.html">Links & Contact</a><li>
-          <li><a href="calendar.html">Concerts</a>
-         </li>
-       </ul>
-     </div>
+  <!-- Header title -->
+  <div id="header">
+    <div class="container">
+      <a id="header-title" href="http://jaslyn.biz">Jaslyn Robertson <span class="mobile-hide"> - </span> Composer</a>
+      <div class="header-nav">
+        <a href="about.html">About  </a>
+         <a href="recordings.html">Music  </a>
+        <a href="research.html">Research  </a>
+         <a href="links.html">Contact </a>
+         <a href="calendar.html">Events  </a></ul>
+      </div>
+      <span class="button" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </div>
-<div id="fake-title">
-  <h2 class="fake-title">.</h2>
+  </div>
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+      <a href="about.html">About</a>
+      <a href="recordings.html">Music</a>
+      <a href="research.html">Research</a>
+      <a href="links.html">Links & Contact</a>
+      <a href="calendar.html">Events</a>
+  </div>
 </div>
+</div>
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+</script>
 <div id="embed">
 <div class="video-container"><iframe width="853" height="480"
-src="https://www.youtube.com/embed/EVxN-gjPyN0?si=MCkU3pW06WqqlyBn" frameborder="0" allowfullscreen>
+src="https://www.youtube.com/embed/EVxN-gjPyN0?si=MCkU3pW06WqqlyBn" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 </iframe>
 </div>
-<br>
 <div class="video-container"><iframe width="853" height="480"
 src="https://www.youtube.com/embed/O7DBy-c_ANk?si=Fru8cFTJKUcYgaJk" frameborder="0" allowfullscreen>
 </iframe>
 </div>
-<br>
 <div class="video-container"><iframe width="853" height="480"
 src="https://youtube.com/embed/aA3pOas6qas?si=v9OkpR-KA1xQzHvS" frameborder="0" allowfullscreen>
 </iframe>
 </div>
-<br>
 <div class="video-container"><iframe width="853" height="480"
 src="https://www.youtube.com/embed/SscrM7xuXtg?start=14" frameborder="0" allowfullscreen>
 </iframe>
 </div>
-<br>
 <div class="video-container"><iframe width="853" height="480"
 src="https://www.youtube.com/embed/hemq9c6Q3bw" frameborder="0" allowfullscreen>
 </iframe>
 </div>
-<br>
 <div class="video-container"><iframe width="853" height="480"
 src="https://www.youtube.com/embed/LMXIF7VIe08" frameborder="0" allowfullscreen>
 </iframe>
 </div>
-<br>
 <div class="video-container"><iframe width="853" height="480" src="https://player.vimeo.com/video/433547191" frameborder="0" allowfullscreen>
 </iframe>
 </div>
-<br>
-<br>
 <div class="container">
 <iframe width="50%" height="166" scrolling="no" frameborder="no" allow="autoplay"
 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/850854802&color=%2396dcfc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
 </iframe>
 </div>
-<br>
-<br>
 <div class="container">
 <iframe width="50%" height="166" scrolling="no" frameborder="no" allow="autoplay"
 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/728057338&color=%23faff00&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
 </iframe>
 </div>
-<br>
-<br>
 <div class="container">
 <iframe width="50%" height="166" scrolling="no" frameborder="no" allow="autoplay"
 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/654196220&color=%231ad489&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
 </iframe>
 </div>
-<br>
 <div class="video-container"><iframe width="853" height="480" src="https://player.vimeo.com/video/304034210" frameborder="0" allowfullscreen>
 </iframe>
 </div>
-<br>
 <div class="container">
 <iframe style="width: 50%; height: 120px;"
 src="https://bandcamp.com/EmbeddedPlayer/album=3330668427/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=1997936003/transparent=true/" seamless><a href="http://fleecerecords.bandcamp.com/album/fleece-1-you-havent-finished-your-ape">Fleece 1: You Haven&#39;t Finished Your Ape by Fleece</a>
 </iframe>
 </div>
-<br>
 <div class="container">
 <iframe width="50%" height="166" scrolling="no" frameborder="no"
 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/290635334&amp;color=%23e0a372&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true">
 </iframe>
 </div>
-<br>
 <div class="video-container"><iframe width="853" height="480"
 src="https://www.youtube.com/embed/b2uEqSCgt2A" frameborder="0" allowfullscreen>
 </iframe>
 </div>
-<br>
-<br>
 </div><!-- element -->
 </html>

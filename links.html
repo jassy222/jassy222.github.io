@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html>
- <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  <head>
-    <link rel="icon" href="http://cur.cursors-4u.net/nature/nat-10/nat942.png">
-   <title>Jaslyn Robertson - About</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="http://cur.cursors-4u.net/nature/nat-10/nat942.png">
+   <title>Jaslyn Robertson</title>
    <link rel="stylesheet" type="text/css"
    href="styles.css">
  </head>
  <body>
-   <div id="header">
-     <div class="container">
-       <a id="header-title" href="http://jaslyn.biz">Jaslyn Robertson - Composer</a>
-       <ul id="header-nav">
-         <li><a href="about.html">About</a></li>
-         <li><a href="recordings.html">Recordings</a></li>
-          <li><a href="links.html">Links & Contact</a><li>
-          <li><a href="calendar.html">Concerts</a>
-         </li>
-       </ul>
-     </div>
+  <!-- Header title -->
+  <div id="header">
+    <div class="container">
+      <a id="header-title" href="http://jaslyn.biz">Jaslyn Robertson <span class="mobile-hide"> - </span> Composer</a>
+      <div class="header-nav">
+        <a href="about.html">About  </a>
+         <a href="recordings.html">Music  </a>
+        <a href="research.html">Research  </a>
+         <a href="links.html">Contact </a>
+         <a href="calendar.html">Events  </a></ul>
+      </div>
+      <span class="button" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </div>
+  </div>
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+      <a href="about.html">About</a>
+      <a href="recordings.html">Music</a>
+      <a href="research.html">Research</a>
+      <a href="links.html">Links & Contact</a>
+      <a href="calendar.html">Events</a>
+  </div>
+</div>
+<!-- Use any element to open/show the overlay navigation menu -->
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
    <div id="content">
     <div class="container">
       <div class="about">
@@ -27,13 +55,14 @@
           <div class="about-content">
            <div class="text-box">
             <p>
-            <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fjaslynrobertson&color=orange_transparent&size=64" style="width: 64px; height: 64px;"></iframe>
-            <br><a href="https://colossal-trailblazer-3133.ck.page/c05450c61d">Subscribe to my newsletter</a>
+              <a href="https://jaslyn.kit.com/c05450c61d">Subscribe to my newsletter</a>
              <br><a href="https://www.australianmusiccentre.com.au/artist/robertson-jaslyn">Australian Music Centre</a>
-            <br><a>jassyrobertson22@gmail.com</a>
+             <br><a href="https://soundcloud.com/jaslynrobertson">Soundcloud</a>
+             <br><a href="https://www.linkedin.com/in/jaslyn-robertson-phd-537732224">LinkedIn</a>
+            <br><br><a>Reach out to me at jassyrobertson22@gmail.com</a>
             </p>
           </div>
         </div>
       </div>
-</div>
   </div>
+</div>
