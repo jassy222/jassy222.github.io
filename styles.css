@@ -289,7 +289,8 @@ body {
 
 @media screen and (max-width: 700px) {
   .square .caption {
-    background-size: 24px 24px;
+    background-size: 26px 26px;
+    bottom: 20%;
   }
 }
 
